@@ -1,0 +1,107 @@
+.image-slider {
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  /* Căn giữa toàn bộ component */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.slider-info {
+  margin: 15px 0;
+  color: #666;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.slider-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background: #4CAF50;
+  color: white;
+}
+
+.slider-btn:hover {
+  background: #45a049;
+}
+
+.prev-btn {
+  background: #2196F3;
+}
+
+.prev-btn:hover {
+  background: #0b7dda;
+}
+
+/* Đảm bảo component được căn giữa trên trang */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Hoặc nếu bạn chỉ muốn căn giữa component này */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .image-slider {
+    margin: 20px;
+    width: 90%;
+  }
+  
+  .slider-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider-btn {
+    width: 80%;
+  }
+}

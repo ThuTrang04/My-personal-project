@@ -18,4 +18,4 @@ class User extends Member {
 var x = new User();
 console.log(x.memberInfo());
 
-export default Member;
+export default Member
