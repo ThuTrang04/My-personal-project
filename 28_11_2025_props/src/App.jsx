@@ -3,6 +3,9 @@ import Vongdoiso from './vongdoi/Vongdoiso'
 import Vongdoi from './vongdoi/Vongdoi'
 import Khoa_lop from './vidu_props'
 import './App.css'
+import TinhDiemTB from './form/TinhDiemTB'
+import Baitap_Form from './form/Baitap_Form'
+import Input from './form/Input'
 
 //bai 1
 function App() {
@@ -12,6 +15,9 @@ function App() {
       <VongdoiIMG />
       <Vongdoiso />
       <Vongdoi />
+      <TinhDiemTB/>
+      <Baitap_Form/>
+      <Input/>
     </div>
   );
 }
@@ -42,7 +48,7 @@ function App() {
 //     </div>
 //   );
 // }
-
+ 
 export default App;
 
 
